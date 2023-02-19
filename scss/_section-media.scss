@@ -474,7 +474,7 @@
 
     .ecosystem {
         height: 100% !important;
-        padding: 100px 0;
+        padding: 50px 0;
 
         &:before {
             display: none;
@@ -487,7 +487,7 @@
 
     .road-map {
         height: 100% !important;
-        padding: 100px 0;
+        padding: 50px 0;
 
         &:before {
             background-repeat: repeat-y;
@@ -498,7 +498,7 @@
             gap: 0;
             display: flex;
             padding: 0 20px;
-            max-width: 400px;
+            max-width: 100%;
         }
 
         &__card {
@@ -551,10 +551,18 @@
             right: 0;
         }
     }
+    
+    .road-map__card-title {
+        font-size: 28px;
+    }
+
+    .road-map__item {
+        font-size: 18px;
+    }
 
     .advantages {
         height: 100%;
-        padding: 100px 0;
+        padding: 50px 0;
 
         &::before {
             background-repeat: repeat-y;
@@ -583,12 +591,12 @@
         }
 
         &__card-title {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
     .take-away {
-        padding: 75px 0 120px;
+        padding: 50px 0 50px;
         height: 100% !important;
         .section-heading {
             margin-bottom: 0px;
@@ -601,7 +609,7 @@
 
     .last-screen {
         height: 100%;
-        padding: 100px 0 50px;
+        padding: 50px 0 50px;
 
         .section-heading {
             font-size: 50px;
@@ -635,6 +643,10 @@
         &__arrow {
             rotate: 90deg;
         }
+    }
+
+    .take-away::before {
+        display: none;
     }
 }
 
@@ -755,6 +767,12 @@
 
     .road-map {
         padding: 50px 0;
+    }
+
+    .road-map {
+        &__card {
+            padding: 20px;
+        }
     }
 
     .last-screen {
