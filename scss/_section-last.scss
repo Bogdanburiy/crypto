@@ -56,6 +56,9 @@
         width: 74px;
         height: 74px;
         animation: pulse 1s infinite;
+        &.mobile {
+            display: none;
+        }
     }
 
     @keyframes animate-svg-stroke-1 {

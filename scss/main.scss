@@ -33,7 +33,11 @@ body {
     font-family: $montserrat;
     margin: 0;
     background-color: #000;
+    scroll-behavior: smooth;
     overflow: hidden;
+    &.mobile-open {
+        overflow: hidden;
+    }
 }
 
 * ul {

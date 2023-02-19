@@ -120,6 +120,18 @@
     }
 }
 
+@keyframes backgroundsizecard {
+    0% {
+        background-size: 150%;
+    }
+    50% {
+        background-size: 180%;
+    }
+    100% {
+        background-size: 150%;
+    }
+}
+
 @keyframes astronautmmove {
     0% {
         left: 40%;

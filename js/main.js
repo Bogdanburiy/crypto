@@ -37,6 +37,11 @@ $(document).ready(function () {
       let index = Number($(this).attr("href"));
       swiperScrolling.slideTo(index, 1000, true); //index, speed, runCallbacks
     });
+    $("a.footer-arrow").on("click", function (e) {
+      e.preventDefault();
+      let index = Number($(this).attr("href"));
+      swiperScrolling.slideTo(index, 1000, true); //index, speed, runCallbacks
+    });
   } else {
     $(window).scroll(function () {
       if (
@@ -46,20 +51,23 @@ $(document).ready(function () {
         $(".section-scroll__content-stats .stats-grid svg").addClass("active");
       }
     });
+    $("#mobile-scrollTop").on("click", function() {
+      $("body").scrollTop(0);
+    });
   }
 });
 
 // Preloader
-$(window).on('load', function () {
-	$(".takeaway-preloader").delay(4000).fadeOut("slow");
-  $(".takeaway-preloader__animation").delay(3500).fadeOut("slow");
-})
+// $(window).on('load', function () {
+// 	$(".takeaway-preloader").delay(4000).fadeOut("slow");
+//   $(".takeaway-preloader__animation").delay(3500).fadeOut("slow");
+// });
 
-var body = $("body");
-body.addClass("preloader-active");
-setTimeout(function () {
-  body.removeClass("preloader-active");
-}, 4500);
+// var body = $("body");
+// body.addClass("preloader-active");
+// setTimeout(function () {
+//   body.removeClass("preloader-active");
+// }, 4500);
 
 // Fixed header
 $(document).on("scroll", function () {
@@ -74,7 +82,64 @@ $(document).on("scroll", function () {
 $(".header-top__hamburger").click(function () {
   $(this).toggleClass("active");
   $(".overlay").toggleClass("open");
+  $('body').toggleClass("mobile-open");
 });
+
+$(".menu-mob__scroll").on("click", function (e) {
+  e.preventDefault();
+  var target = $(this).attr("href");
+  $('.header-top__hamburger').removeClass("active");
+  $(".overlay").removeClass("open");
+  $('body').removeClass("mobile-open");
+  $("html, body").animate(
+    {
+      scrollTop: eval($(target).offset().top - 70)
+    }, 'slow'
+  );
+});
+
+// Counter
+function getTimeRemaining(endtime) {
+  let t = Date.parse(endtime) - Date.parse(new Date());
+  let seconds = Math.floor((t / 1000) % 60);
+  let minutes = Math.floor((t / 1000 / 60) % 60);
+  let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  let days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    total: t,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+  };
+}
+
+function initializeClock(id, endtime) {
+  let clock = document.getElementById(id);
+  let daysSpan = clock.querySelector(".days");
+  let hoursSpan = clock.querySelector(".hours");
+  let minutesSpan = clock.querySelector(".minutes");
+  let secondsSpan = clock.querySelector(".seconds");
+
+  function updateClock() {
+    let t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+    minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+const deadline = "February 25 2023";
+initializeClock("countdown", deadline);
 
 swiperRoad = new Swiper(".swiper__road-map", {
   speed: 400,

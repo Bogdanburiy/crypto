@@ -18,14 +18,14 @@
 </head>
 <body>
 
-    <div class="takeaway-preloader">
+    <!-- <div class="takeaway-preloader">
         <div class="takeaway-preloader__animation">
             <img src="img/preloader-logo.png" alt="logo">
             <div class="takeaway-preloader__animation-first"></div>
             <div class="takeaway-preloader__animation-second"></div>
             <div class="takeaway-preloader__animation-third"></div>
         </div>
-    </div>
+    </div> -->
     <!-- /.takeaway-preloader -->
 
     <header class="header" id="header">
@@ -43,9 +43,9 @@
                     <ul>
                         <li><a class="menu-scroll" href="0">Takeaway ecosystem</a></li>
                         <li><a class="menu-scroll" href="1">About ecosystem</a></li>
-                        <li><a class="menu-scroll" href="4">Takenomics</a></li>
-                        <li><a class="menu-scroll" href="6">Roadmap</a></li>
-                        <li><a class="menu-scroll" href="7">Our team</a></li>
+                        <li><a class="menu-scroll" href="7">Takenomics</a></li>
+                        <li><a class="menu-scroll" href="8">Roadmap</a></li>
+                        <li><a class="menu-scroll" href="9">Our team</a></li>
                     </ul>
                 </nav>
                 <!-- /.header-top__nav -->
@@ -87,13 +87,19 @@
     <div class="overlay" id="overlay">
         <nav class="overlay-menu">
             <ul class="overlay-menu">
-                <li><a class="menu-mob__scroll" href="#">Takeaway ecosystem</a></li>
-                <li><a class="menu-mob__scroll" href="#">About ecosystem</a></li>
-                <li><a class="menu-mob__scroll" href="#">Takenomics</a></li>
-                <li><a class="menu-mob__scroll" href="#">Roadmap</a></li>
-                <li><a class="menu-mob__scroll" href="#">Our team</a></li>
+                <li><a class="menu-mob__scroll" href="#takeaway">Takeaway ecosystem</a></li>
+                <li><a class="menu-mob__scroll" href="#about-us">About ecosystem</a></li>
+                <li><a class="menu-mob__scroll" href="#tokenomics">Takenomics</a></li>
+                <li><a class="menu-mob__scroll" href="#road-map">Roadmap</a></li>
+                <li><a class="menu-mob__scroll" href="#our-team">Our team</a></li>
+                <li><a href="#" data-fancybox data-src="#legal-popup">Legal Documentation</a></li>
             </ul>
         </nav>
+        <ul class="overlay-menu__btn">
+            <li>
+                <a class="fill-btn" href="#"><span>Buy/Sell take</span></a>
+            </li>
+        </ul>
         <ul class="overlay-menu__social">
             <li>
                 <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
@@ -111,13 +117,13 @@
         </div>
     </div>
 
-    <div id="particles-triangle"></div>
+    <!-- <div id="particles-triangle"></div> -->
     <!-- /#particles-triangle -->
 
     <div class="takeaway-scrolling">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <section class="section-scroll section-scroll__first flex-shrink-0 vw-100 vh-100">
+                <section id="takeaway" class="section-scroll section-scroll__first flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="section-scroll__content">
                             <div class="slide-title">
@@ -134,7 +140,7 @@
                                 <ul>
                                     <li>
                                         <a class="fill-btn" href="#">
-                                            <span>Buy/sale take</span>
+                                            <span>Buy/sell take</span>
                                         </a>
                                     </li>
                                     <li>
@@ -159,10 +165,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="1" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -182,7 +188,7 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll section-scroll__second flex-shrink-0 vw-100 vh-100">
+                <section id="about-us" class="section-scroll section-scroll__second flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="section-scroll__content">
                             <div class="row">
@@ -221,10 +227,6 @@
                                             ticket to the future!
                                         </div>
                                         <!-- /.slide-subtitle -->
-                                        <a href="#" class="fill-btn">
-                                            <span>Buy/Sale take</span>
-                                        </a>
-                                        <!-- /.fill-btn -->
                                     </div>
                                     <!-- /.section-scroll__second-text -->
                                 </div>
@@ -245,10 +247,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="2" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -261,7 +263,119 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll section-scroll__third flex-shrink-0 vw-100 vh-100">
+                <section id="ecosystem" class="section-scroll ecosystem">
+                    <div class="container">
+                        <h2 class="section-heading ecosystem__heading text-center">
+                            TAKE AWAY ECOSYSTEM
+                        </h2>
+                        <!-- /.section-heading -->
+                        <p class="ecosystem__sub-heading text-center">
+                            TAKE AWAY ECOSYSTEM is a highly scalable, secure, and decentralized
+                            ecosystem that enables a radically new crypto economy. It comprises
+                            the most diverse projects in GameFi, Staking, Farming, DEX, and Crypto
+                            Cashback domains.
+                            <br />
+                            <br />
+                            Our goal is an epochal impact on cryptocurrency and the real world to
+                            fundamentally reshape most aspects of society as we know it.
+                        </p>
+                        <!-- /.ecosystem__sub-heading -->
+                        <div class="ecosystem__wrap">
+                            <ul class="ecosystem__list ecosystem__list--left">
+                                <li class="ecosystem__item">
+                                    Academy
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Blockchain
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Real estate
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Virtual
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Cashback
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Marketplace
+                                </li>
+                                <!-- /.ecosystem__item -->
+                            </ul>
+                            <!-- /.ecosystem__list -->
+                            <div class="ecosystem__figures">
+                                <img src="img/t-logo.png" alt="Image">
+                                <img src="img/grad-circle-line.png" alt="Image">
+                                <img src="img/lines-dots.png" alt="Image">
+                                <img src="img/eq-dots.png" alt="Image">
+                                <img src="img/halo-middle.png" alt="Image"">
+                                <img src="img/halo-middle.png" alt="Image"">
+                                <img src="img/planet-line.png" alt="Image">
+                            </div>
+                            <!-- /.ecosystem__figures -->
+                            <ul class="ecosystem__list ecosystem__list--right">
+                                <li class="ecosystem__item">
+                                    GameFi
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Staking
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Farming
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Dex
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Wallet
+                                </li>
+                                <!-- /.ecosystem__item -->
+                                <li class="ecosystem__item">
+                                    Banking
+                                </li>
+                                <!-- /.ecosystem__item -->
+                            </ul>
+                            <!-- /.ecosystem__list -->
+                        </div>
+                        <!-- /.ecosystem__wrap -->
+                    </div>
+                    <!-- /.container -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-row">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.footer-social -->
+                                <a href="3" class="footer-arrow">
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <!-- /.footer-arrow -->
+                            </div>
+                            <!-- /.footer-row -->
+                        </div>
+                        <!-- /.container -->
+                    </footer>
+                    <!-- /.footer -->
+                </section>
+                <!-- /.ecosystem -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+                <section id="how-it-work" class="section-scroll section-scroll__third flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="section-scroll__content">
                             <h2 class="section-heading">
@@ -375,10 +489,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="4" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -392,7 +506,7 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll tiers flex-shrink-0 vw-100 vh-100">
+                <section id="staking-tiers" class="section-scroll tiers flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="tiers__content">
                             <h2 class="section-heading text-center tiers__heading">
@@ -431,16 +545,9 @@
                                         </li>
                                         <!-- /.tiers__card-item -->
                                         <li class="tiers__card-item">
-                                            Max. deposit:
+                                            Min. - Max. deposit:
                                             <span class="bold text-blue">
-                                                100-499 USDT
-                                            </span>
-                                        </li>
-                                        <!-- /.tiers__card-item -->
-                                        <li class="tiers__card-item">
-                                            Min. deposit:
-                                            <span class="semi-bold text-blue">
-                                                50 USDT
+                                                50-299 USDT
                                             </span>
                                         </li>
                                         <!-- /.tiers__card-item -->
@@ -483,16 +590,9 @@
                                         </li>
                                         <!-- /.tiers__card-item -->
                                         <li class="tiers__card-item">
-                                            Max. deposit:
+                                            Min. - Max. deposit:
                                             <span class="bold text-blue">
-                                                500-4999 USDT
-                                            </span>
-                                        </li>
-                                        <!-- /.tiers__card-item -->
-                                        <li class="tiers__card-item">
-                                            Min. deposit:
-                                            <span class="semi-bold text-blue">
-                                                50 USDT
+                                                300-4999 USDT
                                             </span>
                                         </li>
                                         <!-- /.tiers__card-item -->
@@ -535,16 +635,9 @@
                                         </li>
                                         <!-- /.tiers__card-item -->
                                         <li class="tiers__card-item">
-                                            Max. deposit:
+                                            Min. - Max. deposit:
                                             <span class="bold text-blue">
                                                 5000-∞ USDT
-                                            </span>
-                                        </li>
-                                        <!-- /.tiers__card-item -->
-                                        <li class="tiers__card-item">
-                                            Min. deposit:
-                                            <span class="semi-bold text-blue">
-                                                50 USDT
                                             </span>
                                         </li>
                                         <!-- /.tiers__card-item -->
@@ -562,34 +655,25 @@
                                 <h3 class="tiers__time-title light">
                                     start:
                                 </h3>
+                                <div class="tiers__time-list" id="countdown">
+                                    <div class="tiers__time-item bold text-blue number">
+                                        <span class="tiers__time-numb bold days days time"></span>
+                                        <span class="tiers__time-value regular text">Days</span>
+                                    </div>
+                                    <div class="tiers__time-item bold text-blue number">
+                                        <span class="tiers__time-numb bold hours time"></span>
+                                        <span class="tiers__time-value regular text">Hours</span>
+                                    </div>
+                                    <div class="tiers__time-item bold text-blue number">
+                                        <span class="tiers__time-numb bold minutes time"></span>
+                                        <span class="tiers__time-value regular text">Minutes</span>
+                                    </div>
+                                    <div class="tiers__time-item bold text-blue number">
+                                        <span class="tiers__time-numb bold seconds time"></span>
+                                        <span class="tiers__time-value regular text">Seconds</span>
+                                    </div>
+                                </div>
                                 <!-- /.tiers__time-title -->
-                                <ul class="tiers__time-list">
-                                    <li class="tiers__time-item bold text-blue">
-                                        <span class="tiers__time-numb bold days"></span>
-                                        <span class="tiers__time-value regular">days</span>
-                                        <!-- /.tiers__time-value -->
-                                    </li>
-                                    <!-- /.tiers__time-item -->
-                                    <li class="tiers__time-item bold text-blue">
-                                        <span class="tiers__time-numb bold hours"></span>
-                                        <span class="tiers__time-value regular">hours</span>
-                                        <!-- /.tiers__time-value -->
-                                    </li>
-                                    <!-- /.tiers__time-item -->
-                                    <li class="tiers__time-item bold text-blue">
-                                        <span class="tiers__time-numb bold minutes"></span>
-                                        <span class="tiers__time-value regular">minutes</span>
-                                        <!-- /.tiers__time-value -->
-                                    </li>
-                                    <!-- /.tiers__time-item -->
-                                    <li class="tiers__time-item bold text-blue">
-                                        <span class="tiers__time-numb bold seconds"></span>
-                                        <span class="tiers__time-value regular">seconds</span>
-                                        <!-- /.tiers__time-value -->
-                                    </li>
-                                    <!-- /.tiers__time-item -->
-                                </ul>
-                                <!-- /.tiers__time-list -->
                             </div>
                             <!-- /.tiers__time -->
                         </div>
@@ -606,10 +690,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="5" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -621,8 +705,221 @@
                 <!-- /.tiers -->
             </div>
             <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+                <section id="our-product" class="take-away">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="take-away__left">
+                                    <div class="swiper last-carousel__heading">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <h2 class="section-heading">
+                                                    <span class="text-blue bold">Take away</span>
+                                                    crypto cashback
+                                                </h2>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <h2 class="section-heading">
+                                                    <span class="text-blue bold">Take away</span>
+                                                    staking
+                                                </h2>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <h2 class="section-heading">
+                                                    <span class="text-blue bold">Take away</span>
+                                                    farming
+                                                </h2>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <h2 class="section-heading">
+                                                    <span class="text-blue bold">Take away</span>
+                                                    game fi
+                                                </h2>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <h2 class="section-heading">
+                                                    <span class="text-blue bold">Take away</span>
+                                                    crypto exchange
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="take-away__left-nav">
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+                                    <!-- /.take-away__left-nav -->
+                                </div>
+                                <!-- /.take-away__left -->
+                            </div>
+                            <!-- /.col-lg-4 -->
+                            <div class="offset-lg-1 col-lg-6">
+                                <div class="take-away__right">
+                                    <div class="swiper last-carousel__card">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-1.jpg);">
+                                                    <div class="last-carousel_card-text">
+                                                        Our ecosystem offers cashback in TAKE coins. The constant development of the project guarantees the growth of TAKE price. Moreover, they can be staked and farmed within our ecosystem, which is more profitable than bank deposits
+                                                    </div>
+                                                    <!-- /.last-carousel_card-text -->
+                                                    <img class="last-carousel_card-img" src="img/big-logo.png" alt="Arrow">
+                                                </div>
+                                                <!-- /.last-carousel_card -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-2.jpg);">
+                                                    <div class="last-carousel_card-text">
+                                                        We offer a profitable alternative to simply holding TAKE coins - staking. The yield of TAKE AWAY Staking is different from other projects. Its value can reach tens % per annum and higher
+                                                    </div>
+                                                    <!-- /.last-carousel_card-text -->
+                                                    <img class="last-carousel_card-img" src="img/big-arrow.png" alt="Arrow">
+                                                </div>
+                                                <!-- /.last-carousel_card -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
+                                                    <div class="last-carousel_card-text">
+                                                        For those who do not want to be limited to the profitability of staking, we have TAKE AWAY Farming. Put your coins in the liquidity pool and get much more profit!
+                                                    </div>
+                                                    <!-- /.last-carousel_card-text -->
+                                                    <img class="last-carousel_card-img" src="img/t-logo-light.png" alt="Arrow">
+                                                </div>
+                                                <!-- /.last-carousel_card -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
+                                                    <div class="last-carousel_card-text">
+                                                        Blockchain-based and NFT games are a worthy alternative to traditional games. That's why we create GameFi games that inspire us
+                                                    </div>
+                                                    <!-- /.last-carousel_card-text -->
+                                                    <img class="last-carousel_card-img" src="img/joystick.png" alt="Joystick">
+                                                </div>
+                                                <!-- /.last-carousel_card -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
+                                                    <div class="last-carousel_card-text">
+                                                        Our crypto exchange offers fast and secure digital asset exchange. Over 100 trading pairs and no limits!
+                                                    </div>
+                                                    <!-- /.last-carousel_card-text -->
+                                                    <img class="last-carousel_card-img" src="img/cash-3d.png" alt="Cash">
+                                                </div>
+                                                <!-- /.last-carousel_card -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.take-away__right -->
+                            </div>
+                            <!-- /.offset-lg-1 col-lg-7 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-row">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.footer-social -->
+                                <a href="6" class="footer-arrow">
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <!-- /.footer-arrow -->
+                            </div>
+                            <!-- /.footer-row -->
+                        </div>
+                        <!-- /.container -->
+                    </footer>
+                    <!-- /.footer -->
+                </section>
+                <!-- /.take-away -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+                <section id="advantages" class="section-scroll advantages">
+                    <div class="container">
+                        <h2 class="section-heading advantages__heading text-center">
+                            advantages
+                        </h2>
+                        <div class="advantages__cards">
+                            <div class="advantages__card">
+                                <img src="img/advantages-img-1.png" alt="200 partners" class="advantages__card-img" />
+                                <!-- /.advantages__card-img -->
+                                <h3 class="advantages__card-title">
+                                    Over
+                                    <br>
+                                    <span class="text-blue semi-bold">
+                                        200 partners
+                                    </span>
+                                </h3>
+                                <!-- /.advantages__card-title -->
+                            </div>
+                            <!-- /.advantages__card -->
+                            <div class="advantages__card text-center">
+                                <img src="img/advantages-img-2.png" alt="yield for TAKE token" class="advantages__card-img" />
+                                <!-- /.advantages__card-img -->
+                                <h3 class="advantages__card-title">
+                                    High long-term
+                                    <br>
+                                    <span class="text-blue semi-bold">
+                                        yield for TAKE token
+                                    </span>
+                                </h3>
+                                <!-- /.advantages__card-title -->
+                            </div>
+                            <!-- /.advantages__card -->
+                            <div class="advantages__card">
+                                <img src="img/advantages-img-3.png" alt="% cashback" class="advantages__card-img" />
+                                <!-- /.advantages__card-img -->
+                                <h3 class="advantages__card-title">
+                                    High
+                                    <br>
+                                    <span class="text-blue semi-bold">
+                                        % cashback
+                                    </span>
+                                </h3>
+                                <!-- /.advantages__card-title -->
+                            </div>
+                            <!-- /.advantages__card -->
+                        </div>
+                        <!-- /.advantages__cards -->
+                    </div>
+                    <!-- /.container -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-row">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.footer-social -->
+                                <a href="7" class="footer-arrow">
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <!-- /.footer-arrow -->
+                            </div>
+                            <!-- /.footer-row -->
+                        </div>
+                        <!-- /.container -->
+                    </footer>
+                    <!-- /.footer -->
+                </section>
+                <!-- /.advantages -->
+            </div>
+            <!-- /.swiper-slide -->
             <div class="swiper-slide stats-start">
-                <section class="section-scroll section-scroll__fourth flex-shrink-0 vw-100 vh-100">
+                <section id="tokenomics" class="section-scroll section-scroll__fourth flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="section-scroll__content">
                             <div class="row">
@@ -653,7 +950,7 @@
                                         </div>
                                         <!-- /.tokenomics-list -->
                                         <a href="#" class="fill-btn">
-                                            <span>Buy/Sale take</span>
+                                            <span>Buy/sell take</span>
                                         </a>
                                         <!-- /.fill-btn -->
                                     </div>
@@ -753,10 +1050,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="8" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -770,119 +1067,7 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll ecosystem">
-                    <div class="container">
-                        <h2 class="section-heading ecosystem__heading text-center">
-                            TAKE AWAY ECOSYSTEM
-                        </h2>
-                        <!-- /.section-heading -->
-                        <p class="ecosystem__sub-heading text-center">
-                            TAKE AWAY ECOSYSTEM is a highly scalable, secure, and decentralized
-                            ecosystem that enables a radically new crypto economy. It comprises
-                            the most diverse projects in GameFi, Staking, Farming, DEX, and Crypto
-                            Cashback domains.
-                            <br />
-                            <br />
-                            Our goal is an epochal impact on cryptocurrency and the real world to
-                            fundamentally reshape most aspects of society as we know it.
-                        </p>
-                        <!-- /.ecosystem__sub-heading -->
-                        <div class="ecosystem__wrap">
-                            <ul class="ecosystem__list ecosystem__list--left">
-                                <li class="ecosystem__item">
-                                    Academy
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Blockchain
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Real estate
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Virtual
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Cashback
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Marketplace
-                                </li>
-                                <!-- /.ecosystem__item -->
-                            </ul>
-                            <!-- /.ecosystem__list -->
-                            <div class="ecosystem__figures">
-                                <img src="img/t-logo.png" alt="Image">
-                                <img src="img/grad-circle-line.png" alt="Image">
-                                <img src="img/lines-dots.png" alt="Image">
-                                <img src="img/eq-dots.png" alt="Image">
-                                <img src="img/halo-middle.png" alt="Image"">
-                                <img src="img/halo-middle.png" alt="Image"">
-                                <img src="img/planet-line.png" alt="Image">
-                            </div>
-                            <!-- /.ecosystem__figures -->
-                            <ul class="ecosystem__list ecosystem__list--right">
-                                <li class="ecosystem__item">
-                                    GameFi
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Staking
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Farming
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Dex
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Wallet
-                                </li>
-                                <!-- /.ecosystem__item -->
-                                <li class="ecosystem__item">
-                                    Banking
-                                </li>
-                                <!-- /.ecosystem__item -->
-                            </ul>
-                            <!-- /.ecosystem__list -->
-                        </div>
-                        <!-- /.ecosystem__wrap -->
-                    </div>
-                    <!-- /.container -->
-                    <footer class="footer">
-                        <div class="container">
-                            <div class="footer-row">
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
-                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.footer-social -->
-                                <div class="footer-arrow">
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <!-- /.footer-arrow -->
-                            </div>
-                            <!-- /.footer-row -->
-                        </div>
-                        <!-- /.container -->
-                    </footer>
-                    <!-- /.footer -->
-                </section>
-                <!-- /.ecosystem -->
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-                <section class="section-scroll road-map">
+                <section id="road-map" class="section-scroll road-map">
                     <div class="container">
                         <h2 class="road-map__heading section-heading text-center">
                             TAKE AWAY ECOSYSTEM
@@ -1010,10 +1195,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="9" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -1026,7 +1211,7 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll section-scroll__fifth flex-shrink-0 vw-100 vh-100">
+                <section id="our-team" class="section-scroll section-scroll__fifth flex-shrink-0 vw-100 vh-100">
                     <div class="container">
                         <div class="section-scroll__content">
                             <div class="swiper team-carousel">
@@ -1177,10 +1362,10 @@
                                     </ul>
                                 </div>
                                 <!-- /.footer-social -->
-                                <div class="footer-arrow">
+                                <a href="10" class="footer-arrow">
                                     <span></span>
                                     <span></span>
-                                </div>
+                                </a>
                                 <!-- /.footer-arrow -->
                             </div>
                             <!-- /.footer-row -->
@@ -1194,219 +1379,6 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-                <section class="section-scroll advantages">
-                    <div class="container">
-                        <h2 class="section-heading advantages__heading text-center">
-                            advantages
-                        </h2>
-                        <div class="advantages__cards">
-                            <div class="advantages__card">
-                                <img src="img/advantages-img-1.png" alt="200 partners" class="advantages__card-img" />
-                                <!-- /.advantages__card-img -->
-                                <h3 class="advantages__card-title">
-                                    Over
-                                    <br>
-                                    <span class="text-blue semi-bold">
-                                        200 partners
-                                    </span>
-                                </h3>
-                                <!-- /.advantages__card-title -->
-                            </div>
-                            <!-- /.advantages__card -->
-                            <div class="advantages__card text-center">
-                                <img src="img/advantages-img-2.png" alt="yield for TAKE token" class="advantages__card-img" />
-                                <!-- /.advantages__card-img -->
-                                <h3 class="advantages__card-title">
-                                    High long-term
-                                    <br>
-                                    <span class="text-blue semi-bold">
-                                        yield for TAKE token
-                                    </span>
-                                </h3>
-                                <!-- /.advantages__card-title -->
-                            </div>
-                            <!-- /.advantages__card -->
-                            <div class="advantages__card">
-                                <img src="img/advantages-img-3.png" alt="% cashback" class="advantages__card-img" />
-                                <!-- /.advantages__card-img -->
-                                <h3 class="advantages__card-title">
-                                    High
-                                    <br>
-                                    <span class="text-blue semi-bold">
-                                        % cashback
-                                    </span>
-                                </h3>
-                                <!-- /.advantages__card-title -->
-                            </div>
-                            <!-- /.advantages__card -->
-                        </div>
-                        <!-- /.advantages__cards -->
-                    </div>
-                    <!-- /.container -->
-                    <footer class="footer">
-                        <div class="container">
-                            <div class="footer-row">
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
-                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.footer-social -->
-                                <div class="footer-arrow">
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <!-- /.footer-arrow -->
-                            </div>
-                            <!-- /.footer-row -->
-                        </div>
-                        <!-- /.container -->
-                    </footer>
-                    <!-- /.footer -->
-                </section>
-                <!-- /.advantages -->
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
-                <section class="take-away">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="take-away__left">
-                                    <div class="swiper last-carousel__heading">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <h2 class="section-heading">
-                                                    <span class="text-blue bold">Take away</span>
-                                                    crypto cashback
-                                                </h2>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <h2 class="section-heading">
-                                                    <span class="text-blue bold">Take away</span>
-                                                    staking
-                                                </h2>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <h2 class="section-heading">
-                                                    <span class="text-blue bold">Take away</span>
-                                                    farming
-                                                </h2>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <h2 class="section-heading">
-                                                    <span class="text-blue bold">Take away</span>
-                                                    game fi
-                                                </h2>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <h2 class="section-heading">
-                                                    <span class="text-blue bold">Take away</span>
-                                                    crypto exchange
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="take-away__left-nav">
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
-                                    </div>
-                                    <!-- /.take-away__left-nav -->
-                                </div>
-                                <!-- /.take-away__left -->
-                            </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="offset-lg-1 col-lg-6">
-                                <div class="take-away__right">
-                                    <div class="swiper last-carousel__card">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-1.jpg);">
-                                                    <div class="last-carousel_card-text">
-                                                        Our ecosystem offers cashback in TAKE coins. The constant development of the project guarantees the growth of TAKE price. Moreover, they can be staked and farmed within our ecosystem, which is more profitable than bank deposits
-                                                    </div>
-                                                    <!-- /.last-carousel_card-text -->
-                                                    <img class="last-carousel_card-img" src="img/big-logo.png" alt="Arrow">
-                                                </div>
-                                                <!-- /.last-carousel_card -->
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-2.jpg);">
-                                                    <div class="last-carousel_card-text">
-                                                        We offer a profitable alternative to simply holding TAKE coins - staking. The yield of TAKE AWAY Staking is different from other projects. Its value can reach tens % per annum and higher
-                                                    </div>
-                                                    <!-- /.last-carousel_card-text -->
-                                                    <img class="last-carousel_card-img" src="img/big-arrow.png" alt="Arrow">
-                                                </div>
-                                                <!-- /.last-carousel_card -->
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
-                                                    <div class="last-carousel_card-text">
-                                                        For those who do not want to be limited to the profitability of staking, we have TAKE AWAY Farming. Put your coins in the liquidity pool and get much more profit!
-                                                    </div>
-                                                    <!-- /.last-carousel_card-text -->
-                                                    <img class="last-carousel_card-img" src="img/t-logo-light.png" alt="Arrow">
-                                                </div>
-                                                <!-- /.last-carousel_card -->
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
-                                                    <div class="last-carousel_card-text">
-                                                        Blockchain-based and NFT games are a worthy alternative to traditional games. That's why we create GameFi games that inspire us
-                                                    </div>
-                                                    <!-- /.last-carousel_card-text -->
-                                                    <img class="last-carousel_card-img" src="img/joystick.png" alt="Joystick">
-                                                </div>
-                                                <!-- /.last-carousel_card -->
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="last-carousel_card" style="background-image: url(img/last-carousel-img-3.jpg);">
-                                                    <div class="last-carousel_card-text">
-                                                        Our crypto exchange offers fast and secure digital asset exchange. Over 100 trading pairs and no limits!
-                                                    </div>
-                                                    <!-- /.last-carousel_card-text -->
-                                                    <img class="last-carousel_card-img" src="img/cash-3d.png" alt="Cash">
-                                                </div>
-                                                <!-- /.last-carousel_card -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.take-away__right -->
-                            </div>
-                            <!-- /.offset-lg-1 col-lg-7 -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /.container -->
-                    <footer class="footer">
-                        <div class="container">
-                            <div class="footer-row">
-                                <div class="footer-social">
-                                    <ul>
-                                        <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
-                                        <li><a href="#"><img src="img/telegram.svg" alt="Telegram"></a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.footer-social -->
-                                <div class="footer-arrow">
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <!-- /.footer-arrow -->
-                            </div>
-                            <!-- /.footer-row -->
-                        </div>
-                        <!-- /.container -->
-                    </footer>
-                    <!-- /.footer -->
-                </section>
-                <!-- /.take-away -->
-            </div>
-            <!-- /.swiper-slide -->
-            <div class="swiper-slide">
                 <section class="last-screen">
                     <div class="container last-screen__content">
                         <h2 class="section-heading last-screen__heading">
@@ -1416,6 +1388,15 @@
                             ECOSYSTEM
                         </h3>
                         <a href="0" class="last-screen__arrow">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2" class="svg-elem-1"></circle>
+                                <path d="M30.5 14L19.7071 24.7929C19.3166 25.1834 19.3166 25.8166 19.7071 26.2071L30.5 37"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" class="svg-elem-2"></path>
+                            </svg>
+                            <!-- <img src="img/arrow-circle.png" alt="arrow-circle" class="last-screen__arrow-icon"> -->
+                        </a>
+                        <!-- /.last-screen__arrow -->
+                        <a href="#" id="mobile-scrollTop" class="last-screen__arrow mobile">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2" class="svg-elem-1"></circle>
                                 <path d="M30.5 14L19.7071 24.7929C19.3166 25.1834 19.3166 25.8166 19.7071 26.2071L30.5 37"
@@ -1488,7 +1469,7 @@
     </div>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="crossorigin="anonymous"></script>    <!-- Bootstrap JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
@@ -1503,19 +1484,17 @@
     <script>
         $(document).ready(function () {
 
-            var $swiper = $(".team-carousel");
-            var $bottomSlide = null;
-            var $bottomSlideContent = null;
-
-            var mySwiper = new Swiper(".team-carousel", {
+            var teamcarousel = new Swiper(".team-carousel", {
                 spaceBetween: 1,
                 slidesPerView: 3,
                 centeredSlides: true,
-                // roundLengths: true,
+                roundLengths: true,
+                rewind: true,
                 loop: true,
                 loopAdditionalSlides: 30,
                 pagination: {
                     el: ".swiper-pagination",
+                    clickable: true,
                 },
                 navigation: {
                     nextEl: ".swiper-button-next",
@@ -1565,50 +1544,6 @@
                 },
             });
             lastSliderImg.controller.control = lastSliderText;
-
-            // Timer
-            function getTimeRemaining(endtime) {
-                const total = Date.parse(endtime) - Date.parse(new Date())
-                const seconds = Math.floor((total / 1000) % 60)
-                const minutes = Math.floor((total / 1000 / 60) % 60)
-                const hours = Math.floor((total / (1000 * 60 * 60)) % 24)
-                const days = Math.floor(total / (1000 * 60 * 60 * 24))
-
-                return {
-                    total,
-                    days,
-                    hours,
-                    minutes,
-                    seconds,
-                }
-            }
-
-            function initializeClock(element, endtime) {
-                const clock = document.querySelector(`.${element}`)
-                const daysSpan = clock.querySelector('.days')
-                const hoursSpan = clock.querySelector('.hours')
-                const minutesSpan = clock.querySelector('.minutes')
-                const secondsSpan = clock.querySelector('.seconds')
-
-                function updateClock() {
-                    const t = getTimeRemaining(endtime)
-
-                    daysSpan.innerHTML = t.days
-                    hoursSpan.innerHTML = ('0' + t.hours).slice(-2)
-                    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2)
-                    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2)
-
-                    if (t.total <= 0) {
-                        clearInterval(timeinterval)
-                    }
-                }
-
-                updateClock()
-                const timeinterval = setInterval(updateClock, 1000)
-            }
-
-            const deadline = '2023-02-30'
-            initializeClock('tiers__time-list', deadline);
         });
     </script>
 

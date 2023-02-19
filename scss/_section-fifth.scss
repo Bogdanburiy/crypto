@@ -215,6 +215,11 @@
                     font-size: 16px;
                 }
             }
+            .swiper-button-next.swiper-button-disabled {
+                opacity: 1;
+                pointer-events: visible;
+                cursor: pointer;
+            }
             .swiper-pagination {
                 bottom: 0;
                 .swiper-pagination-bullet {
