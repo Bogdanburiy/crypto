@@ -1,0 +1,279 @@
+.ecosystem {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../img/asteroid.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: 3;
+        animation: backgroundsize 20s infinite ease-in-out;
+        filter: brightness(2);
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("../img/ecosystem-bg.png") no-repeat;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    &__heading,
+    &__sub-heading,
+    &__figures,
+    &__circle-line,
+    &__list {
+        position: relative;
+        z-index: 2;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 130px;
+        position: relative;
+        z-index: 4;
+    }
+    &__heading {
+        margin-bottom: 38px;
+    }
+    &__sub-heading {
+        font-size: 18px;
+        color: $light-white;
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+    &__figures {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &:nth-of-type(1) {
+                top: 54%;
+                left: 51%;
+                z-index: 6;
+                animation: huechange 20s infinite linear;
+            }
+            &:nth-of-type(2) {
+                z-index: 5;
+            }
+            &:nth-of-type(3) {
+                z-index: 4;
+                animation: rotateanim 40s infinite linear;
+            }
+            &:nth-of-type(4) {
+                top: 55%;
+                left: 52%;
+                z-index: 3;
+                animation: dotsrotation 40s infinite linear;
+            }
+            &:nth-of-type(5) {
+                top: 15%;
+                left: 70%;
+                z-index: 6;
+                animation: lightblick 2s infinite linear;
+            }
+            &:nth-of-type(6) {
+                top: 75%;
+                left: 20%;
+                transform: translate(-50%, -50%) scale(.6);
+                z-index: 6;
+                animation: lightblick 10s infinite linear;
+            }
+            &:nth-of-type(7) {
+                z-index: 1;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &--left {
+            text-align: right;
+            .ecosystem__item {
+                &:nth-child(2) {
+                    padding-right: 20px;
+                    animation-delay: 0.4s;
+                    animation-duration: 7.1s;
+                }
+
+                &:nth-child(3) {
+                    padding-right: 80px;
+                    animation-delay: 0.3s;
+                    animation-duration: 7.3s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: 0.5s;
+                    animation-duration: 6.8s;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: 0.1s;
+                    animation-duration: 6.5s;
+                }
+            }
+        }
+        &--right {
+            padding-left: 10px;
+            .ecosystem__item {
+                &:nth-child(2) {
+                    animation-delay: 0.4s;
+                    animation-duration: 7.1s;
+                }
+
+                &:nth-child(3) {
+                    padding-left: 60px;
+                    animation-delay: 0.3s;
+                    animation-duration: 7.3s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: 0.5s;
+                    animation-duration: 6.8s;
+                    padding-right: 30px;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: 0.1s;
+                    animation-duration: 6.5s;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &__item {
+        text-transform: uppercase;
+        color: $light-white;
+        font-size: 18px;
+        animation: animateItem 5s linear infinite;
+        font-weight: 300;
+    }
+}
+
+
+@keyframes animateItem {
+    0% {
+        font-size: 18px;
+        filter: blur(3px);
+        opacity: 0.6;
+    }
+
+    25% {
+        font-size: 14px;
+        filter: blur(0px);
+        scale: 1.3;
+        opacity: 1;
+    }
+
+    75% {
+        font-size: 16px;
+        filter: blur(0px);
+        scale: 1.5;
+    }
+
+    100% {
+        font-size: 18px;
+        scale: 1;
+        filter: blur(3px);
+        opacity: 0.6;
+    }
+}
+
+@keyframes lightblick {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateanim {
+    0% {
+        transform: translate(-50%,-50%) rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%,-50%) rotate(-360deg);
+    }
+}
+
+@keyframes huechange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(50deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes phonetransform {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundsize {
+    0% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 110%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}

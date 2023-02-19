@@ -1,0 +1,80 @@
+// placeholders
+%gradient {
+  background: linear-gradient(to right, $gradient-color-1, $gradient-color-2);
+}
+
+%borderRadiusGradient {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+%gradientTransparentToBlue {
+  background: linear-gradient(to right, transparent, $gradient-color-2);
+}
+
+%font-gradient {
+  @extend %gradient;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+//  regular
+
+body {
+  font-family: $montserrat;
+  margin: 0;
+  background-color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section-heading {
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $light-blue;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: $light-blue;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}

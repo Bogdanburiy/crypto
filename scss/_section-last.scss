@@ -1,0 +1,158 @@
+.last-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: backgroundsize 25s infinite ease-in;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../img/galaxy-bg.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: 3;
+        animation: backgroundsize 20s infinite ease-in-out;
+        filter: brightness(2);
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        z-index: 4;
+    }
+
+    &__heading {
+        font-size: 138px;
+    }
+
+    &__sub-heading {
+        font-size: 72px;
+        margin-bottom: 78px;
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(120deg, #04c7ff, #ae00ff, #04c7ff);
+        background-size: 200%;
+        animation: animationgradientlogo 0.2s ease-in-out infinite;
+        border-radius: 50%;
+        width: 74px;
+        height: 74px;
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes animate-svg-stroke-1 {
+        0% {
+            stroke-dashoffset: 152.79644737231007px;
+            stroke-dasharray: 152.79644737231007px;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+            stroke-dasharray: 152.79644737231007px;
+        }
+    }
+
+    .svg-elem-1 {
+        animation: animate-svg-stroke-1 3s ease-out 2s both infinite;
+    }
+
+    @keyframes animate-svg-stroke-2 {
+        0% {
+            stroke-dashoffset: 34.09792709350586px;
+            stroke-dasharray: 34.09792709350586px;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+            stroke-dasharray: 34.09792709350586px;
+        }
+    }
+
+    .svg-elem-2 {
+        animation: animate-svg-stroke-2 3s ease-out 2s both infinite;
+    }
+
+    &__footer {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $light-blue;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &-contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        &-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+
+            .last-screen__link {
+                &:nth-child(2) {
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__link {
+        color: $light-blue;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+
+        &:hover {
+            color: $gradient-color-1;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
