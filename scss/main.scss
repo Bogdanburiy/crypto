@@ -505,19 +505,31 @@ body.preloader-active #particles-triangle {
     right: 15px;
 }
 
-.custom-popup h2 {
-    color: #fff;
-    font-size: 28px;
-    line-height: 36px;
-    margin-bottom: 30px;
-}
-
-.custom-popup p {
-    color: #fff;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 30px;
-    opacity: 0.8;
+.custom-popup {
+    h2 {
+        color: #fff;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .takeaway-preloader {

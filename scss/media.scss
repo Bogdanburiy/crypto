@@ -171,6 +171,143 @@
 }
 
 @media only screen and (max-width: 1200px) {
+    .header-top__logo {
+        margin-right: 15px;
+    }
+    .header-top__logo a i.icon {
+        margin-right: 0;
+    }
+    .header-top__logo a span {
+        display: none;
+    }
+    .header-top__nav ul li {
+        margin-right: 10px;
+    }
+    .header-top__btns {
+        margin-left: 15px;
+    }
+    .header-top__btns ul li {
+        margin-right: 15px;
+    }
+    .header-top__btns ul li a {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    .slide-title h1 {
+        font-size: 70px;
+        line-height: 90%;
+    }
+    .section-scroll .planet-animation {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .slide-description p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section-scroll__second .slide-subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .section-scroll__content-list li {
+        min-height: 45px;
+        margin-bottom: 15px;
+        padding-left: 60px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .section-scroll__content-list li .strong {
+        font-size: 15px;
+    }
+    .section-scroll__content-list li i.icon::after {
+        width: 40px;
+        height: 40px;
+    }
+    .section-scroll__content-list li i.icon {
+        width: 45px;
+        height: 45px;
+    }
+    .section-scroll__content-stat .stat-column h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section-scroll__content-stat .stat-column:nth-of-type(1) {
+        max-width: 170px;
+    }
+    .section-scroll__content-stat .stat-column__item {
+        padding: 0 15px;
+    }
+    .section-scroll__content-stat .stat-column:nth-of-type(2) {
+        max-width: calc(100% - 170px);
+    }
+    .section-scroll__content-stat .stat-column__item p {
+        max-width: 120px;
+    }
+    .section-scroll__content-stat .stat-column__item .strong {
+        font-size: 21px;
+    }
+    .section-scroll__content-text .tokenomics-list ul li {
+        padding-left: 45px;
+        font-size: 21px;
+    }
+    .section-scroll__content-stats .stats-grid__item .strong {
+        font-size: 21px;
+    }
+    .section-scroll__content-stats .stats-value {
+        margin-bottom: 15px;
+        padding-left: 70px;
+    }
+    .section-scroll__content-stats .stats-value ul li {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .section-scroll__fourth img.astronaut {
+        max-width: 650px;
+        width: 100%;
+    }
+    .section-scroll__content-stats .stats-month {
+        margin-top: 15px;
+        padding-left: 70px;
+    }
+    .section-scroll__content-stats .stats-grid {
+        height: 260px;
+    }
+    .section-scroll__content-stats .stats-grid__item {
+        margin-bottom: 8px;
+    }
+    .section-scroll__content-stats .stats-grid svg:nth-of-type(1) {
+        bottom: 5px;
+        left: 70px;
+        width: 85%;
+        height: 240px;
+    }
+    .section-scroll__content-stats .stats-grid svg:nth-of-type(2) {
+        width: 76%;
+        height: 200px;
+        bottom: 5px;
+        left: 70px;
+    }
+    .section-scroll__content-stats .stats-grid svg:nth-of-type(3) {
+        width: 75%;
+        height: 82px;
+        bottom: 5px;
+        left: 70px;
+    }
+    .section-scroll__content .team-carousel__card-back {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section-heading {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-top__logo a i.icon {
+        margin-right: 15px;
+    }
+    .header-top__logo a span {
+        display: block;
+    }
     // Hamburger menu start
     .header-top__hamburger {
         position: relative;
@@ -220,7 +357,6 @@
     .header-top__hamburger span:nth-of-type(3) {
         top: 70%;
     }
-
     .overlay {
         position: fixed;
         display: flex;
@@ -365,115 +501,6 @@
     .header .header-top__btns {
         display: none;
     }
-    .slide-title h1 {
-        font-size: 70px;
-        line-height: 90%;
-    }
-    .section-scroll .planet-animation {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    .slide-description p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .section-scroll__second .slide-subtitle {
-        font-size: 16px;
-        line-height: 26px;
-    }
-    .section-scroll__content-list li {
-        min-height: 45px;
-        margin-bottom: 15px;
-        padding-left: 60px;
-        font-size: 15px;
-        line-height: 25px;
-    }
-    .section-scroll__content-list li .strong {
-        font-size: 15px;
-    }
-    .section-scroll__content-list li i.icon::after {
-        width: 40px;
-        height: 40px;
-    }
-    .section-scroll__content-list li i.icon {
-        width: 45px;
-        height: 45px;
-    }
-    .section-scroll__content-stat .stat-column h3 {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .section-scroll__content-stat .stat-column:nth-of-type(1) {
-        max-width: 170px;
-    }
-    .section-scroll__content-stat .stat-column__item {
-        padding: 0 15px;
-    }
-    .section-scroll__content-stat .stat-column:nth-of-type(2) {
-        max-width: calc(100% - 170px);
-    }
-    .section-scroll__content-stat .stat-column__item p {
-        max-width: 120px;
-    }
-    .section-scroll__content-stat .stat-column__item .strong {
-        font-size: 21px;
-    }
-    .section-scroll__content-text .tokenomics-list ul li {
-        padding-left: 45px;
-        font-size: 21px;
-    }
-    .section-scroll__content-stats .stats-grid__item .strong {
-        font-size: 21px;
-    }
-    .section-scroll__content-stats .stats-value {
-        margin-bottom: 15px;
-        padding-left: 70px;
-    }
-    .section-scroll__content-stats .stats-value ul li {
-        margin-right: 15px;
-        font-size: 14px;
-    }
-    .section-scroll__fourth img.astronaut {
-        max-width: 650px;
-        width: 100%;
-    }
-    .section-scroll__content-stats .stats-month {
-        margin-top: 15px;
-        padding-left: 70px;
-    }
-    .section-scroll__content-stats .stats-grid {
-        height: 260px;
-    }
-    .section-scroll__content-stats .stats-grid__item {
-        margin-bottom: 8px;
-    }
-    .section-scroll__content-stats .stats-grid svg:nth-of-type(1) {
-        bottom: 5px;
-        left: 70px;
-        width: 85%;
-        height: 240px;
-    }
-    .section-scroll__content-stats .stats-grid svg:nth-of-type(2) {
-        width: 76%;
-        height: 200px;
-        bottom: 5px;
-        left: 70px;
-    }
-    .section-scroll__content-stats .stats-grid svg:nth-of-type(3) {
-        width: 75%;
-        height: 82px;
-        bottom: 5px;
-        left: 70px;
-    }
-    .section-scroll__content .team-carousel__card-back {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .section-heading {
-        font-size: 50px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
     body {
         overflow: scroll;
     }
@@ -679,6 +706,8 @@
     .section-scroll__content .team-carousel .swiper-button-prev {
         left: 23px;
         opacity: 1;
+        cursor: pointer;
+        pointer-events: visible;
     }
     .section-scroll__content .team-carousel__card:hover .team-carousel__card-front {
         opacity: 1;
@@ -710,6 +739,9 @@
     }
     .section-scroll__content .team-carousel.swiper .swiper-slide {
         transform: scale(1);
+    }
+    .section-scroll__fifth::before {
+        display: none;
     }
 }
 
