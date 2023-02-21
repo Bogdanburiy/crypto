@@ -171,4 +171,4 @@ if (breakpoint.matches) {
   swiperRoad.destroy(true, true);
 }
 
-// particlesJS.load("particles-triangle", "js/particlesjs-config.json");
+particlesJS.load("particles-triangle", "js/particlesjs-config.json");
