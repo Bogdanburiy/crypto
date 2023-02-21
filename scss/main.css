@@ -239,11 +239,6 @@ body.mobile-open {
   transition: all 0.3s ease-out;
 }
 
-body.preloader-active #particles-triangle {
-  z-index: 100;
-  opacity: 0.3;
-}
-
 .takeaway-scrolling {
   display: none;
 }
